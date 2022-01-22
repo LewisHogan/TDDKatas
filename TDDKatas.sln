@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator", "StringC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator.Tests", "StringCalculator.Tests\StringCalculator.Tests.csproj", "{4CCCFEB9-1895-4D11-9B9E-41462D5DCAFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordValidator", "PasswordValidator\PasswordValidator.csproj", "{3F1B16CE-55DA-4A7D-BAAC-057DFD070707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordValidator.Tests", "PasswordValidator.Tests\PasswordValidator.Tests.csproj", "{F2F6C216-23FD-4731-B0E8-8FBD5DD58632}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{4CCCFEB9-1895-4D11-9B9E-41462D5DCAFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CCCFEB9-1895-4D11-9B9E-41462D5DCAFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CCCFEB9-1895-4D11-9B9E-41462D5DCAFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F1B16CE-55DA-4A7D-BAAC-057DFD070707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F1B16CE-55DA-4A7D-BAAC-057DFD070707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F1B16CE-55DA-4A7D-BAAC-057DFD070707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F1B16CE-55DA-4A7D-BAAC-057DFD070707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F6C216-23FD-4731-B0E8-8FBD5DD58632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F6C216-23FD-4731-B0E8-8FBD5DD58632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F6C216-23FD-4731-B0E8-8FBD5DD58632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F6C216-23FD-4731-B0E8-8FBD5DD58632}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
