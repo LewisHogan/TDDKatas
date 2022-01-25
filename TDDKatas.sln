@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordValidator", "Passwo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordValidator.Tests", "PasswordValidator.Tests\PasswordValidator.Tests.csproj", "{F2F6C216-23FD-4731-B0E8-8FBD5DD58632}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitySearch", "CitySearch\CitySearch.csproj", "{E8FF0529-3F1B-4154-A37F-C129FBD02781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitySearch.Tests", "CitySearch.Tests\CitySearch.Tests.csproj", "{F3173E03-C635-47C2-B392-EE79E5B0C10A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{F2F6C216-23FD-4731-B0E8-8FBD5DD58632}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2F6C216-23FD-4731-B0E8-8FBD5DD58632}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2F6C216-23FD-4731-B0E8-8FBD5DD58632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8FF0529-3F1B-4154-A37F-C129FBD02781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8FF0529-3F1B-4154-A37F-C129FBD02781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8FF0529-3F1B-4154-A37F-C129FBD02781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8FF0529-3F1B-4154-A37F-C129FBD02781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3173E03-C635-47C2-B392-EE79E5B0C10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3173E03-C635-47C2-B392-EE79E5B0C10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3173E03-C635-47C2-B392-EE79E5B0C10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3173E03-C635-47C2-B392-EE79E5B0C10A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

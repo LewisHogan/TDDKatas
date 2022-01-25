@@ -66,6 +66,7 @@ public class StringCalculatorTests
     [InlineData("//;\n1;3", 4)]
     [InlineData("//|\n1|2|3", 6)]
     [InlineData("//sep\n2sep5", 7)]
+    [InlineData("//\n\n4\n5\n6", 15)]
     public void Add_CustomDelimiter_ReturnsSumNumber(string input, int expectedOutput)
         => Assert.Equal(expectedOutput, StringCalculator.Add(input));
 

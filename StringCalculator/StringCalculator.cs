@@ -1,21 +1,19 @@
 ﻿namespace StringCalculator;
 public class StringCalculator
 {
-    public static int Add(string numbers)
+    public static int Add(string input)
     {
-        if (string.Empty == numbers) return 0;
+        if (string.Empty == input) return 0;
 
         var delimiters = new string[] { ",", "\n" };
-        if (numbers.StartsWith("//"))
+        if (input.StartsWith("//"))
         {
-            // If a custom delimiter is specified it means we don't use the default options anymore, and it also means we need
-            // to preprocess the input string a bit
-            var endOfCustomDelimiter = numbers.IndexOf("\n");
-            delimiters = new string[] { numbers[2..endOfCustomDelimiter] };
-            numbers = numbers[(endOfCustomDelimiter + 1)..];
+            // If we have a custom delimiter we want to replace the default delimiters
+            // We also need to remove the initial input string portion that defines the delimiter from the processed string of numbers.
+            delimiters = new string[] { ExtractDelimiter(ref input) };
         }
 
-        var splitTokens = numbers.Split(delimiters.ToArray(), StringSplitOptions.TrimEntries);
+        var splitTokens = input.Split(delimiters, StringSplitOptions.TrimEntries);
         if (splitTokens.Any(token => token == string.Empty))
         {
             throw new ArgumentException("Multiple consecutive delimiters not allowed");
@@ -37,5 +35,21 @@ public class StringCalculator
         }
 
         return integers.Where(number => number <= 1000).Sum();
+    }
+    
+    private static string ExtractDelimiter(ref string input)
+    {
+        var endOfCustomDelimiter = input.IndexOf('\n');
+        var delimiter = input[2..endOfCustomDelimiter];
+        if (delimiter == string.Empty)
+        {
+            delimiter = "\n";
+            endOfCustomDelimiter++;
+        }
+
+        // Everything that remains after the last delimiter character is actual input we want to process elsewhere
+        input = input[(endOfCustomDelimiter + 1)..];
+
+        return (delimiter);
     }
 }
